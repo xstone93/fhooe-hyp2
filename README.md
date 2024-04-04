@@ -10,13 +10,13 @@ Folgende Entitäten (= Tabellen) sind in einer ``.sql-Datei`` bereits definiert:
 - Question
 - Answer
 - Aufgaben
-- 
+  
 Die nachfolgenden Aufgaben sind Teil der ersten Gruppenaufgabe. In der Übungseinheit wird mit der Bearbeitung begonnen. Alle nachfolgenden Schritte sind dabei auszuführen. Im Teil 8 wird behandelt wie die Datei korrekt exportiert wird. Der vollständige Export ist dabei abzugeben. 
 
 Achtung: Alle SQL-Befehle sollen händisch geschrieben werden. Die Verwendung von Benutzeroberflächen zur Erstellung ist in dieser Aufgabe nicht vorgesehen!
 
 # Teil 1: Importieren der Datenstruktur
-Der erste Schritt ist der Import der bereits vorhandenen ersten Datenbankstruktur. Dies kann zwar recht bequem über die Benutzeroberfläche von PhpMyAdmin gemacht werden, in einem ersten Schritt werden wir dies allerdings einmal händisch über Docker machen. 
+Der erste Schritt ist der Import der bereits vorhandenen [ersten Datenbankstruktur](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/quiz.sql). Dies kann zwar recht bequem über die Benutzeroberfläche von PhpMyAdmin gemacht werden, in einem ersten Schritt werden wir dies allerdings einmal händisch über Docker machen. 
 
 Dazu muss eine neue Kommandozeile (cmd) geöffnet werden:
 
@@ -86,7 +86,7 @@ d) Grimming
 Hier sind sie in der Umsetzung gänzlich frei!
 
 # Teil 4: Importieren von Spieldaten
-Importieren Sie Spieldaten für das Oberösterrich-Quiz mithilfe der Kommandozeile. Diese Daten befinden sich 
+Importieren Sie [Spieldaten](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/PlayerAnswer-data.sql) für das Oberösterrich-Quiz mithilfe der Kommandozeile. 
 
 # Teil 5: Abfragen von Daten (5 Punkte)
 Folgende Abfragen sollen folgende fünf Abfragen durchgeführt werden:
