@@ -2,7 +2,8 @@
 Der erste Teil an der Arbeit mit QuizQuest beschäftigt sich damit, eine entsprechende Datenbank aufzubauen, die alle relevanten Informationen verwaltet. In der ersten Übungseinheit haben wir uns bereits mit dem groben Aufbau der Datenbank bzw. der Tabellen beschäftigt. In dieser Einheit werden wir darauf aufbauen, diese erweitern und in weiterer Folge auch eine Manipulation der Daten durchführen. 
 
 Disclaimer: Im Zuge dieser Übung wird ein erster Entwurf eines Datenmodells angeführt. Der Prozess der Datenmodellierung (im Kontext von Normalformen und Beziehungen) wird erst Mitte April genauer besprochen. Bis dahin wird mit der vorgegebenen Datenstruktur gearbeitet.
-Datenstruktur
+
+# Datenstruktur
 Folgende Entitäten (= Tabellen) sind in einer ``.sql-Datei`` bereits definiert: 
 
 - User
@@ -15,6 +16,8 @@ Folgende Entitäten (= Tabellen) sind in einer ``.sql-Datei`` bereits definiert:
 Die nachfolgenden Aufgaben sind Teil der ersten Gruppenaufgabe. In der Übungseinheit wird mit der Bearbeitung begonnen. Alle nachfolgenden Schritte sind dabei auszuführen. Im Teil 8 wird behandelt wie die Datei korrekt exportiert wird. Der vollständige Export ist dabei abzugeben. 
 
 Achtung: Alle SQL-Befehle sollen händisch geschrieben werden. Die Verwendung von Benutzeroberflächen zur Erstellung ist in dieser Aufgabe nicht vorgesehen!
+
+**Alle Aufgaben sollen in Ihr Team-Repository gepusht werden!**
 
 # Teil 1: Importieren der Datenstruktur
 Der erste Schritt ist der Import der bereits vorhandenen [ersten Datenbankstruktur](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/src/quiz.sql). Dies kann zwar recht bequem über die Benutzeroberfläche von PhpMyAdmin gemacht werden, in einem ersten Schritt werden wir dies allerdings einmal händisch über Docker machen. 
