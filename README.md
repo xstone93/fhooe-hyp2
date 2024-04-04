@@ -9,18 +9,21 @@ Folgende Entitäten (= Tabellen) sind in einer ``.sql-Datei`` bereits definiert:
 - Game
 - Question
 - Answer
-- Aufgaben
+
+# Aufgaben
   
 Die nachfolgenden Aufgaben sind Teil der ersten Gruppenaufgabe. In der Übungseinheit wird mit der Bearbeitung begonnen. Alle nachfolgenden Schritte sind dabei auszuführen. Im Teil 8 wird behandelt wie die Datei korrekt exportiert wird. Der vollständige Export ist dabei abzugeben. 
 
 Achtung: Alle SQL-Befehle sollen händisch geschrieben werden. Die Verwendung von Benutzeroberflächen zur Erstellung ist in dieser Aufgabe nicht vorgesehen!
 
 # Teil 1: Importieren der Datenstruktur
-Der erste Schritt ist der Import der bereits vorhandenen [ersten Datenbankstruktur](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/quiz.sql). Dies kann zwar recht bequem über die Benutzeroberfläche von PhpMyAdmin gemacht werden, in einem ersten Schritt werden wir dies allerdings einmal händisch über Docker machen. 
+Der erste Schritt ist der Import der bereits vorhandenen [ersten Datenbankstruktur](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/src/quiz.sql). Dies kann zwar recht bequem über die Benutzeroberfläche von PhpMyAdmin gemacht werden, in einem ersten Schritt werden wir dies allerdings einmal händisch über Docker machen. 
 
 Dazu muss eine neue Kommandozeile (cmd) geöffnet werden:
 
 ``$ docker exec -i mariadb mariadb -uhypermedia -pgeheim < quiz.sql``
+
+**Hinweis**: Falls Sie noch einen Docker-Container aus dem vergangenen Semester laufen haben, muss anstelle des Users ``hypermedia`` der User ``onlineshop`` verwendet werden (d. h. ``$ docker exec -i mariadb mariadb -uonlineshop -pgeheim < quiz.sql``).
 
 Auf diese Weise wird die Datei quiz.sql an die Datenbank weitergeleitet und von dieser importiert. 
 
@@ -47,7 +50,6 @@ Schwierigkeitsgrad: mittel
 Ersteller: User 1
 Verfügbarkeitsbeginn: heutiges Datum
 Verfügbarkeitsende: 30. April
-
 
 Zum Quiz sollen insgesamt fünf Fragen mit den jeweils folgenden Antwortmöglichkeiten hinzugefügt werden.
 
@@ -86,7 +88,7 @@ d) Grimming
 Hier sind sie in der Umsetzung gänzlich frei!
 
 # Teil 4: Importieren von Spieldaten
-Importieren Sie [Spieldaten](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/PlayerAnswer-data.sql) für das Oberösterrich-Quiz mithilfe der Kommandozeile. 
+Importieren Sie [Spieldaten](https://raw.githubusercontent.com/xstone93/fhooe-hyp2-ue2/main/src/PlayerAnswer-data.sql) für das Oberösterrich-Quiz mithilfe der Kommandozeile. 
 
 # Teil 5: Abfragen von Daten (5 Punkte)
 Folgende Abfragen sollen folgende fünf Abfragen durchgeführt werden:
@@ -107,6 +109,8 @@ Es sollen im Oberösterreichquiz zwei Änderungen durchgeführt werden. Alle Anp
 Eine SQL-View ist eine virtuelle Tabelle, die aus dem Ergebnis einer SQL-Abfrage erstellt wird und als eine benannte Tabelle behandelt werden kann, um den Zugriff auf Daten zu vereinfachen und zu steuern. Sie bietet eine zusätzliche Abstraktionsebene über den tatsächlichen Daten in der Datenbank und ermöglicht es, komplexe Abfragen zu speichern und wiederzuverwenden.
 
 Es soll eine neue View QuizRanking erstellt werden, die alle Spieler:innen pro Quiz anzeigt, allerdings nach Quiztitel und Punktestand absteigend sortiert.
+
+[Hier](https://www.w3schools.com/mysql/mysql_view.asp) finden Sie weitere Informationen zum Definieren von Views.
 
 # Teil 8: Abgabe
 Eine komplette Datenbank kann - wie im Teil 1 - mithilfe einer Docker-Shell exportiert werden. Dazu wird das Programm mariadb-dump verwendet. 
