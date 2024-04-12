@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Tabellenstruktur für Tabelle `PlayerAnswer`
 --
 
-CREATE TABLE `PlayerAnswer` (
+CREATE TABLE IF NOT EXISTS `PlayerAnswer` (
   `ID` int(11) NOT NULL,
   `UserID` int(11) DEFAULT NULL,
   `QuestionID` int(11) DEFAULT NULL,
